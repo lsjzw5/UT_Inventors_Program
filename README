@@ -1,0 +1,70 @@
+
+MVP 1:
+For this MVP, we will be focusing on trying to understand what we are given with by means of the data and then using that to try to spot trends within the data to then pick out the most important features to quantify "best".
+
+FILES:
+Run in the order of appearance
+
+Distributions of feature types - EDA to help us understand what we were dealing with
+Plotting up qualitative data - EDA to see what the labels of the data are telling us
+Finding Amount of Missing data - EDA to help us see how much data is missing
+Cleaning variables - Will help get rid of features that are not really populated
+Duplicate Entries - Cleaning up the monthly production file so that there are no duplicates
+
+Setting up best - file 1 (final version)
+Setting up best - file 2 (final version)
+Setting up best - file 3 (with grade)
+Setting up best - file 4 (final version with grade)
+
+The above files are there to extract the best features along with scoring them
+
+MVP 2:
+In this MVP, we broaden our scope of what we want to see in our data, so this means we use the data to come up with interpolated data along with fishing out features from the comments along with the production data.
+We then use the new data to come up with a less biased way to come up with "best" features, that being a kmeans clustering model.
+
+FILES:
+Run in the order of appearance
+
+MVP 2 Preprocessing - This file will extract vital information out of the error reports along with interpolating other files
+
+Final Version MVP2 - Will take new files to then run through kmeans clustering to then come up with final features to quantify and score
+
+
+MVP 3:
+In this last MVP we focus on Data imputation through means of KNN and Random Forest to try to make up for the number of missing data that we had in our files. 
+Then we bulked up our model building side by expanding our Kmeans clustering model and including Spectral clustering, DBSCAN, and Agglomerative clustering.
+
+FILES:
+Run in the order of appearance
+
+Data building:
+Random Forest Imputation (Updated) - This file will construct the file with values imputed by Random Forest
+Applying KNN - This file will construct the file with values imputed by KNN
+
+Sampling:
+Scaling Rig Contractors - (Splitting upper 3, taking lower 2)-KNN
+Scaling Rig Contractors - (Splitting upper 3, taking lower 2)-RF
+Scaling Rig Contractors - Taking flat amounts (replacement w-o-max)-KNN
+Scaling Rig Contractors - Taking flat amounts (replacement w-o-max)-RF
+Scaling Rig Contractors - Taking flat amounts (replacement)-KNN
+Scaling Rig Contractors - Taking flat amounts (replacement)-RF
+
+The above files are all sampling with 3 different sampling methods and with the differently imputed numbers.
+
+Model building:
+MVP 3 work, new PCA into agglomerative-Scaled_Replaced-KNN
+MVP 3 work, new PCA into agglomerative-Scaled_Replaced-RF
+MVP 3 work, new PCA into Kmeans-Scaled_Replaced-KNN
+MVP 3 work, new PCA into Kmeans-Scaled_Replaced-RF
+MVP 3 work, new PCA into Spectral-Scaled_Replaced-KNN
+MVP 3 work, new PCA into Spectral-Scaled_Replaced-RF
+
+The above files are all building their respective clustering models given either KNN or Random forest imputed values.
+
+Model interpretation/result:
+MVP 3 scores aquisition - This will isolate the best features for Stimulation stages and for Recompletion data along with quantifying the results
+
+
+SHARED:
+
+Too many to count, but these files contain the hard data that you need for these files
